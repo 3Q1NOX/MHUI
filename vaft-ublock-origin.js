@@ -58,7 +58,7 @@ twitch-videoad.js text/javascript
         scope.ClientVersion = 'null';
         scope.ClientSession = 'null';
         //scope.PlayerType1 = 'site'; //Source - NOTE: This is unused as it's implicitly used by the website iself
-        scope.PlayerType2 = 'autoplay'; //360p
+        scope.PlayerType2 = 'autoplay'; //1080p
         scope.PlayerType3 = 'embed'; //Source
         //scope.PlayerType4 = 'embed'; //Source
         scope.CurrentChannelName = null;
@@ -179,7 +179,7 @@ twitch-videoad.js text/javascript
                                         }
                                         var lowQuality = document.querySelectorAll('input[data-a-target="tw-radio"');
                                         if (lowQuality) {
-                                            var qualityToSelect = lowQuality.length - 2;
+                                            var qualityToSelect = lowQuality.length - 3;
                                             if (e.data.value != null) {
                                                 if (e.data.value.includes('original')) {
                                                     e.data.value = OriginalVideoPlayerQuality;
@@ -194,19 +194,19 @@ twitch-videoad.js text/javascript
                                                     qualityToSelect = 2;
                                                 }
                                                 if (e.data.value.includes('864p')) {
-                                                    qualityToSelect = 2;
+                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('900p')) {
-                                                    qualityToSelect = 2;
+                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('936p')) {
-                                                    qualityToSelect = 2;
+                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('960p')) {
-                                                    qualityToSelect = 2;
+                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('1080p')) {
-                                                    qualityToSelect = 2;
+                                                    qualityToSelect = 3;
                                                 }
                                                 if (e.data.value.includes('source')) {
                                                     qualityToSelect = 1;
